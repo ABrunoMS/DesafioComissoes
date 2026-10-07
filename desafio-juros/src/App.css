@@ -1,0 +1,152 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #172033;
+  background: #f4f6f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f4f6f8;
+}
+
+main {
+  width: min(700px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+h1 {
+  margin: 0 0 32px;
+  font-size: 32px;
+  color: #172033;
+}
+
+h2 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  color: #172033;
+}
+
+/* Formulário */
+
+form {
+  padding: 28px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border: 1px solid #e1e5ea;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(23, 32, 51, 0.05);
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #293548;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d6dbe1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172033;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #64748b;
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.12);
+}
+
+.input-moeda {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d6dbe1;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.input-moeda span {
+  padding-left: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #596579;
+}
+
+.input-moeda input {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.input-moeda:focus-within {
+  border-color: #64748b;
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.12);
+}
+
+button {
+  width: 100%;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #172033;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #293548;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Resultado */
+
+section {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e1e5ea;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(23, 32, 51, 0.05);
+}
+
+section p {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0f2;
+  font-size: 15px;
+  color: #596579;
+}
+
+section p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+section p strong {
+  color: #172033;
+}
